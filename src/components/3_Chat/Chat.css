@@ -1,0 +1,50 @@
+/* MESSAGE LIST */
+.MessageList_NavigationBar {
+  display: flex;
+  justify-content: space-between;
+}
+.MessageList_DropDown {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* CREATE MESSAGE */
+.CreateMessage_FirstLine {
+  display: flex;
+  justify-content: space-between;
+}
+.CreateMessage_DropDown {
+  display: flex;
+  justify-content: flex-start;
+}
+.CreateMessage_Input {
+  width: 85vw;
+  height: 20vh;
+}
+
+/* MESSAGE1, MESSAGE2 */
+.Message1_Message {
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+}
+.Message1_Bold,
+.Message2_Bold {
+  font-weight: bold;
+}
+.Message1_Button,
+.Message2_Button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+.Message2_Container {
+  border-bottom: solid 1px grey;
+}
+.Message2_Center {
+  display: flex;
+  justify-content: center;
+}

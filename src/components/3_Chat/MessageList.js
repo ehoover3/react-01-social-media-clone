@@ -1,6 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import { Button, Dropdown, Nav } from "react-bootstrap";
 import {
   useStore,
+  STORE_GET_ALL_MESSAGES,
   STORE_GET_USER_MESSAGES,
   STORE_FLIP_HIDE_CREATE_MESSAGE,
 } from "../../store/store";
@@ -8,20 +10,20 @@ import {
   fetch_getUserMessages,
   fetch_getAllMessages,
 } from "../../fetchRequests";
-import Message1 from "./Message1";
-import { Button, Nav } from "react-bootstrap";
+import Message from "./Message";
 
-export function UserMessages(props) {
+export function MessageList(props) {
   const dispatch = useStore((state) => state.dispatch);
   const user = useStore((state) => state.user);
   const userMessages = useStore((state) => state.messages);
+  const [dropDownText, setDropDownText] = useState("ALL");
   const booleanHideCreateMessage = useStore(
     (state) => state.booleanHideCreateMessage
   );
 
   useEffect(() => {
-    fetch_getUserMessages(user.username).then((messageList) => {
-      dispatch({ type: STORE_GET_USER_MESSAGES, payload: messageList });
+    fetch_getAllMessages(user.username).then((messageList) => {
+      dispatch({ type: STORE_GET_ALL_MESSAGES, payload: messageList });
     });
   }, []);
 
@@ -43,33 +45,45 @@ export function UserMessages(props) {
   function getChatroom3Messages() {}
 
   return (
-    <div>
-      <div className="MessageList_FlexBox">
-        <div></div>
-        <Nav variant="pills" className="justify-content-center">
-          <Nav.Item>
-            <Nav.Link eventKey="0" onSelect={getAllMessages}>
-              ALL
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link eventKey="1" onSelect={getUserMessages}>
-              USER
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link eventKey="2">DM's</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link eventKey="3">CHATROOM 1</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link eventKey="4">CHATROOM 2</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link eventKey="5">CHATROOM 3</Nav.Link>
-          </Nav.Item>
-        </Nav>
+    <>
+      <section className="MessageList_NavigationBar">
+        <div className="MessageList_DropDown">
+          <Dropdown>
+            <Dropdown.Toggle variant="primary" id="dropdown-basic">
+              Dropdown Button
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item
+                onSelect={getAllMessages}
+                onClick={() => setDropDownText("ALL")}
+              >
+                ALL
+              </Dropdown.Item>
+              <Dropdown.Item
+                onSelect={getUserMessages}
+                onClick={() => setDropDownText("USER")}
+              >
+                USER
+              </Dropdown.Item>
+              <Dropdown.Item onClick={() => setDropDownText("DM's")}>
+                DM's
+              </Dropdown.Item>
+              <Dropdown.Item onClick={() => setDropDownText("CHATROOM 1")}>
+                CHATROOM 1
+              </Dropdown.Item>
+              <Dropdown.Item onClick={() => setDropDownText("CHATROOM 2")}>
+                CHATROOM 2
+              </Dropdown.Item>
+              <Dropdown.Item onClick={() => setDropDownText("CHATROOM 3")}>
+                CHATROOM 3
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+
+          <Button variant="light" disabled>
+            {dropDownText}
+          </Button>
+        </div>
 
         <Button
           variant="success"
@@ -83,27 +97,26 @@ export function UserMessages(props) {
         >
           CREATE MESSAGE
         </Button>
-      </div>
-
-      <section className="getAllUserMessages">
-        <ul className="MessageList_List">
-          {userMessages.messages &&
-            userMessages.messages.map((message) => (
-              <Message1
-                likes={message.likes.length}
-                key={message.id}
-                text={message.text}
-                username={message.username}
-                createdAt={message.createdAt}
-                id={message.id}
-                likeArray={message.likes}
-                getAllOfMessages={getUserMessages}
-              />
-            ))}
-        </ul>
       </section>
-    </div>
+
+      <section>
+        {userMessages.messages &&
+          userMessages.messages.map((message) => (
+            <Message
+              likes={message.likes.length}
+              key={message.id}
+              text={message.text}
+              username={message.username}
+              createdAt={message.createdAt}
+              id={message.id}
+              likeArray={message.likes}
+              getMessages={getAllMessages}
+              Message_Return={"MessageList"}
+            />
+          ))}
+      </section>
+    </>
   );
 }
 
-export default UserMessages;
+export default MessageList;

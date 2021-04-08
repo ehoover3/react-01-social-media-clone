@@ -1,0 +1,16 @@
+/* HOME */
+.Home_ImageContainer {
+  display: flex;
+  justify-content: center;
+}
+.Home_Image {
+  display: flex;
+  justify-content: center;
+  width: 45vw;
+  height: 35vh;
+}
+
+.Home_ImageButtons {
+  display: flex;
+  justify-content: center;
+}

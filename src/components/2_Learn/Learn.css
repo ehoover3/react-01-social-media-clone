@@ -1,3 +1,25 @@
+/* QUIZ MENU  */
+.QuizMenu_ArrowUpCircle,
+.QuizMenu_Brick {
+  font-size: 15vh;
+}
+.QuizMenu_Text {
+  font-size: 10vh;
+}
+.QuizMenu_Line {
+  display: flex;
+  justify-content: space-evenly;
+
+  margin: 0px;
+  /* margin-bottom: 5vh; */
+  padding: 0px;
+}
+.QuizMenu_FlexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+/* QUIZ */
 .Quiz_QuestionContainer,
 .Quiz_ResultsContainer {
   display: flex;

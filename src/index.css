@@ -53,15 +53,3 @@ body {
   margin: 0;
   font-family: SofiaPro, Poppins, sans-serif;
 }
-
-.App_Container {
-  margin: 0px;
-  padding: 0px;
-  width: 100vw;
-  max-width: 100vw;
-}
-
-.MessageList_List {
-  margin: 0px;
-  padding: 0px;
-}

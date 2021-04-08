@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 import { useStore } from "./store/store";
 import "bootstrap/dist/css/bootstrap.min.css";
 //VIEWS
-import Navigation from "./components/Navigation";
+import Navigation from "./components/Navigation/Navigation";
 import LoginPage from "./views/0_LoginPage";
 import Home from "./views/1_Home";
 import Learn from "./views/2_Learn";

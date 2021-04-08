@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { STORE_GET_ALL_MESSAGES, useStore } from "../../store/store";
+import { STORE_GET_TOP_LIKED_MESSAGES, useStore } from "../../store/store";
 import { fetch_getAllMessages } from "../../fetchRequests";
-import Message2 from "./Message2";
+import Message from "../3_Chat/Message";
+
 import { Accordion, Button, Card } from "react-bootstrap";
 
 function TopLikedMessages() {
   const dispatch = useStore((state) => state.dispatch);
-  const messages = useStore((state) => state.messages);
-  const [formData, setFormData] = useState({
-    messageText: "",
-  });
+  const topLikedMessages = useStore((state) => state.topLikedMessages);
 
   function getTopLikedMessages() {
     fetch_getAllMessages().then((messageList) => {
@@ -18,7 +16,7 @@ function TopLikedMessages() {
         .splice(10, messageList.messages.length);
 
       dispatch({
-        type: STORE_GET_ALL_MESSAGES,
+        type: STORE_GET_TOP_LIKED_MESSAGES,
         payload: messageList,
       });
     });
@@ -40,9 +38,9 @@ function TopLikedMessages() {
           <Card.Body>
             <section>
               {/* CONDITIONAL RENDERING: if messages.messages exists, run map function */}
-              {messages.messages &&
-                messages.messages.map((message) => (
-                  <Message2
+              {topLikedMessages.messages &&
+                topLikedMessages.messages.map((message) => (
+                  <Message
                     likes={message.likes.length}
                     key={message.id}
                     messageId={message.id}
@@ -51,7 +49,8 @@ function TopLikedMessages() {
                     createdAt={message.createdAt}
                     id={message.id}
                     likeArray={message.likes}
-                    getTopLikedMessages={getTopLikedMessages}
+                    getMessages={getTopLikedMessages}
+                    Message_Return={"TopLikedMessages"}
                   />
                 ))}
             </section>

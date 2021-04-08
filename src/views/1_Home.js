@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import SideBar from "../components/sidebar/SideBar.js";
+import SideBar from "../components/Sidebar/SideBar.js";
 import { useStore } from "../store/store";
 import {
   fetch_getUser,
