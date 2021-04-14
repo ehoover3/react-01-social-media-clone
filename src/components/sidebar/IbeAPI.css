@@ -1,0 +1,9 @@
+img {
+  width: 15vw;
+    display: flex;
+    flex-grow: center;
+}
+
+button{
+  text-align: center;
+}
