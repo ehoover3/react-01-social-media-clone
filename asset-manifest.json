@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react_quizGame/static/css/main.8f0f3bc7.chunk.css",
-    "main.js": "/react_quizGame/static/js/main.348e0f5d.chunk.js",
-    "main.js.map": "/react_quizGame/static/js/main.348e0f5d.chunk.js.map",
-    "runtime-main.js": "/react_quizGame/static/js/runtime-main.ae589a32.js",
-    "runtime-main.js.map": "/react_quizGame/static/js/runtime-main.ae589a32.js.map",
-    "static/css/2.150d169a.chunk.css": "/react_quizGame/static/css/2.150d169a.chunk.css",
-    "static/js/2.8190a768.chunk.js": "/react_quizGame/static/js/2.8190a768.chunk.js",
-    "static/js/2.8190a768.chunk.js.map": "/react_quizGame/static/js/2.8190a768.chunk.js.map",
-    "index.html": "/react_quizGame/index.html",
-    "static/css/2.150d169a.chunk.css.map": "/react_quizGame/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.8f0f3bc7.chunk.css.map": "/react_quizGame/static/css/main.8f0f3bc7.chunk.css.map",
-    "static/js/2.8190a768.chunk.js.LICENSE.txt": "/react_quizGame/static/js/2.8190a768.chunk.js.LICENSE.txt"
+    "main.css": "/LifeSkills/static/css/main.8f0f3bc7.chunk.css",
+    "main.js": "/LifeSkills/static/js/main.50d4edf7.chunk.js",
+    "main.js.map": "/LifeSkills/static/js/main.50d4edf7.chunk.js.map",
+    "runtime-main.js": "/LifeSkills/static/js/runtime-main.3d66c7d4.js",
+    "runtime-main.js.map": "/LifeSkills/static/js/runtime-main.3d66c7d4.js.map",
+    "static/css/2.150d169a.chunk.css": "/LifeSkills/static/css/2.150d169a.chunk.css",
+    "static/js/2.0beb111d.chunk.js": "/LifeSkills/static/js/2.0beb111d.chunk.js",
+    "static/js/2.0beb111d.chunk.js.map": "/LifeSkills/static/js/2.0beb111d.chunk.js.map",
+    "index.html": "/LifeSkills/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/LifeSkills/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.8f0f3bc7.chunk.css.map": "/LifeSkills/static/css/main.8f0f3bc7.chunk.css.map",
+    "static/js/2.0beb111d.chunk.js.LICENSE.txt": "/LifeSkills/static/js/2.0beb111d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ae589a32.js",
+    "static/js/runtime-main.3d66c7d4.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.8190a768.chunk.js",
+    "static/js/2.0beb111d.chunk.js",
     "static/css/main.8f0f3bc7.chunk.css",
-    "static/js/main.348e0f5d.chunk.js"
+    "static/js/main.50d4edf7.chunk.js"
   ]
 }
