@@ -2,10 +2,10 @@ const info1 = [
   {
     question: "Which dog is happy?",
     answerOptions: [
-      { answerText: "img/quiz/dog1.jpg", isCorrect: false },
-      { answerText: "img/quiz/dog2.jpg", isCorrect: false },
-      { answerText: "img/quiz/dog3.jpg", isCorrect: false },
-      { answerText: "img/quiz/dog4.jpg", isCorrect: true },
+      { answerText: "/img/quiz/dog1.jpg", isCorrect: false },
+      { answerText: "/img/quiz/dog2.jpg", isCorrect: false },
+      { answerText: "/img/quiz/dog3.jpg", isCorrect: false },
+      { answerText: "/img/quiz/dog4.jpg", isCorrect: true },
     ],
   },
   {
