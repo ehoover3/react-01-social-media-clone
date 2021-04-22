@@ -24,7 +24,7 @@ const Carousel1 = () => {
       </Carousel> */}
       <img
             className="Carousel_WidthHeight"
-            src="/img/carousel/Awareness.jpeg"
+            src="img/carousel/Awareness.jpeg"
             alt="First slide"
           />
       <h3 className="Carousel_Text">
