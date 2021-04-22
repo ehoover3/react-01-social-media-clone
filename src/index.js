@@ -16,7 +16,7 @@ import "./components/0sidebar/DogPicsAPI.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename="/LifeSkills">
+    <BrowserRouter basename="/react_quizGame">
       <App />
     </BrowserRouter>
   </React.StrictMode>,
