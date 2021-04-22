@@ -5,7 +5,7 @@ const Carousel1 = () => {
   return (
     <div className="Carousel_Container">
       <h3 className="Carousel_Text">Life Skills</h3>
-      <Carousel>
+      {/* <Carousel>
         <Carousel.Item>
           <img
             className="Carousel_WidthHeight"
@@ -21,7 +21,12 @@ const Carousel1 = () => {
             alt="First slide"
           />
         </Carousel.Item>
-      </Carousel>
+      </Carousel> */}
+      <img
+            className="Carousel_WidthHeight"
+            src="/img/carousel/BodyLanguage.jpeg"
+            alt="First slide"
+          />
       <h3 className="Carousel_Text">
         Read Body Language • Connect With Empathy
       </h3>
