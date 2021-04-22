@@ -1,4 +1,4 @@
-export const baseURL = "http://localhost:3000";
+export const baseURL = "https://autumn-unexpected-surf.glitch.me/";
 //export const baseURL = "https://socialapp-api.heroku.com/"; // alternative API server
 
 ////////////////////////////////////////////////////////////////////////////////
