@@ -2,8 +2,8 @@ const info2 = [
   {
     question: "Which is happy?",
     answerOptions: [
-      { answerText: "img/eye_Happy1.png", isCorrect: true },
-      { answerText: "img/eye_Anger1.png", isCorrect: false },
+      { answerText: "./img/eye_Happy1.png", isCorrect: true },
+      { answerText: "../img/eye_Anger1.png", isCorrect: false },
       { answerText: "img/eye_Sad1.png", isCorrect: false },
       { answerText: "img/eye_Fear1.png", isCorrect: false },
       { answerText: "img/eye_Neutral1.png", isCorrect: false },
@@ -13,8 +13,8 @@ const info2 = [
   {
     question: "Which is anger",
     answerOptions: [
-      { answerText: "img/eye_Happy1.png", isCorrect: false },
-      { answerText: "img/eye_Anger1.png", isCorrect: true },
+      { answerText: "./img/eye_Happy1.png", isCorrect: false },
+      { answerText: "../img/eye_Anger1.png", isCorrect: true },
       { answerText: "img/eye_Sad1.png", isCorrect: false },
       { answerText: "img/eye_Fear1.png", isCorrect: false },
       { answerText: "img/eye_Neutral1.png", isCorrect: false },
@@ -24,8 +24,8 @@ const info2 = [
   {
     question: "Which is fear?",
     answerOptions: [
-      { answerText: "img/eye_Happy1.png", isCorrect: false },
-      { answerText: "img/eye_Anger1.png", isCorrect: false },
+      { answerText: "./img/eye_Happy1.png", isCorrect: false },
+      { answerText: "../img/eye_Anger1.png", isCorrect: false },
       { answerText: "img/eye_Sad1.png", isCorrect: false },
       { answerText: "img/eye_Fear1.png", isCorrect: true },
       { answerText: "img/eye_Neutral1.png", isCorrect: false },
@@ -35,8 +35,8 @@ const info2 = [
   {
     question: "Which is sad?",
     answerOptions: [
-      { answerText: "img/eye_Happy1.png", isCorrect: false },
-      { answerText: "img/eye_Anger1.png", isCorrect: false },
+      { answerText: "./img/eye_Happy1.png", isCorrect: false },
+      { answerText: "../img/eye_Anger1.png", isCorrect: false },
       { answerText: "img/eye_Sad1.png", isCorrect: true },
       { answerText: "img/eye_Fear1.png", isCorrect: false },
       { answerText: "img/eye_Neutral1.png", isCorrect: false },
@@ -46,8 +46,8 @@ const info2 = [
   {
     question: "Which is disgust?",
     answerOptions: [
-      { answerText: "img/eye_Happy1.png", isCorrect: false },
-      { answerText: "img/eye_Anger1.png", isCorrect: false },
+      { answerText: "./img/eye_Happy1.png", isCorrect: false },
+      { answerText: "../img/eye_Anger1.png", isCorrect: false },
       { answerText: "img/eye_Sad1.png", isCorrect: false },
       { answerText: "img/eye_Fear1.png", isCorrect: false },
       { answerText: "img/eye_Neutral1.png", isCorrect: false },
@@ -57,8 +57,8 @@ const info2 = [
   {
     question: "Which is neutral?",
     answerOptions: [
-      { answerText: "img/eye_Happy1.png", isCorrect: false },
-      { answerText: "img/eye_Anger1.png", isCorrect: false },
+      { answerText: "./img/eye_Happy1.png", isCorrect: false },
+      { answerText: "../img/eye_Anger1.png", isCorrect: false },
       { answerText: "img/eye_Sad1.png", isCorrect: false },
       { answerText: "img/eye_Fear1.png", isCorrect: false },
       { answerText: "img/eye_Neutral1.png", isCorrect: true },
