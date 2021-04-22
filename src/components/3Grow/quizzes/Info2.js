@@ -2,12 +2,12 @@ const info2 = [
   {
     question: "Which is happy?",
     answerOptions: [
-      { answerText: "./img/eye_Happy1.png", isCorrect: true },
-      { answerText: "../img/eye_Anger1.png", isCorrect: false },
-      { answerText: "img/eye_Sad1.png", isCorrect: false },
-      { answerText: "img/eye_Fear1.png", isCorrect: false },
-      { answerText: "img/eye_Neutral1.png", isCorrect: false },
-      { answerText: "img/eye_Disgust1.png", isCorrect: false },
+      { answerText: "../img/quiz/eye_Happy1.png", isCorrect: true },
+      { answerText: "../img/quiz/eye_Anger1.png", isCorrect: false },
+      { answerText: "../img/quiz/eye_Sad1.png", isCorrect: false },
+      { answerText: "../img/quiz/eye_Fear1.png", isCorrect: false },
+      { answerText: "../img/quiz/eye_Neutral1.png", isCorrect: false },
+      { answerText: "../img/quiz/eye_Disgust1.png", isCorrect: false },
     ],
   },
   {
@@ -15,10 +15,10 @@ const info2 = [
     answerOptions: [
       { answerText: "./img/eye_Happy1.png", isCorrect: false },
       { answerText: "../img/eye_Anger1.png", isCorrect: true },
-      { answerText: "img/eye_Sad1.png", isCorrect: false },
-      { answerText: "img/eye_Fear1.png", isCorrect: false },
-      { answerText: "img/eye_Neutral1.png", isCorrect: false },
-      { answerText: "img/eye_Disgust1.png", isCorrect: false },
+      { answerText: "../img/quiz/eye_Sad1.png", isCorrect: false },
+      { answerText: "../img/quiz/eye_Fear1.png", isCorrect: false },
+      { answerText: "../img/quiz/eye_Neutral1.png", isCorrect: false },
+      { answerText: "../img/quiz/eye_Disgust1.png", isCorrect: false },
     ],
   },
   {
@@ -26,10 +26,10 @@ const info2 = [
     answerOptions: [
       { answerText: "./img/eye_Happy1.png", isCorrect: false },
       { answerText: "../img/eye_Anger1.png", isCorrect: false },
-      { answerText: "img/eye_Sad1.png", isCorrect: false },
-      { answerText: "img/eye_Fear1.png", isCorrect: true },
-      { answerText: "img/eye_Neutral1.png", isCorrect: false },
-      { answerText: "img/eye_Disgust1.png", isCorrect: false },
+      { answerText: "../img/quiz/eye_Sad1.png", isCorrect: false },
+      { answerText: "../img/quiz/eye_Fear1.png", isCorrect: true },
+      { answerText: "../img/quiz/eye_Neutral1.png", isCorrect: false },
+      { answerText: "../img/quiz/eye_Disgust1.png", isCorrect: false },
     ],
   },
   {
@@ -37,10 +37,10 @@ const info2 = [
     answerOptions: [
       { answerText: "./img/eye_Happy1.png", isCorrect: false },
       { answerText: "../img/eye_Anger1.png", isCorrect: false },
-      { answerText: "img/eye_Sad1.png", isCorrect: true },
-      { answerText: "img/eye_Fear1.png", isCorrect: false },
-      { answerText: "img/eye_Neutral1.png", isCorrect: false },
-      { answerText: "img/eye_Disgust1.png", isCorrect: false },
+      { answerText: "../img/quiz/eye_Sad1.png", isCorrect: true },
+      { answerText: "../img/quiz/eye_Fear1.png", isCorrect: false },
+      { answerText: "../img/quiz/eye_Neutral1.png", isCorrect: false },
+      { answerText: "../img/quiz/eye_Disgust1.png", isCorrect: false },
     ],
   },
   {
@@ -48,10 +48,10 @@ const info2 = [
     answerOptions: [
       { answerText: "./img/eye_Happy1.png", isCorrect: false },
       { answerText: "../img/eye_Anger1.png", isCorrect: false },
-      { answerText: "img/eye_Sad1.png", isCorrect: false },
-      { answerText: "img/eye_Fear1.png", isCorrect: false },
-      { answerText: "img/eye_Neutral1.png", isCorrect: false },
-      { answerText: "img/eye_Disgust1.png", isCorrect: true },
+      { answerText: "../img/quiz/eye_Sad1.png", isCorrect: false },
+      { answerText: "../img/quiz/eye_Fear1.png", isCorrect: false },
+      { answerText: "../img/quiz/eye_Neutral1.png", isCorrect: false },
+      { answerText: "../img/quiz/eye_Disgust1.png", isCorrect: true },
     ],
   },
   {
@@ -59,10 +59,10 @@ const info2 = [
     answerOptions: [
       { answerText: "./img/eye_Happy1.png", isCorrect: false },
       { answerText: "../img/eye_Anger1.png", isCorrect: false },
-      { answerText: "img/eye_Sad1.png", isCorrect: false },
-      { answerText: "img/eye_Fear1.png", isCorrect: false },
-      { answerText: "img/eye_Neutral1.png", isCorrect: true },
-      { answerText: "img/eye_Disgust1.png", isCorrect: false },
+      { answerText: "../img/quiz/eye_Sad1.png", isCorrect: false },
+      { answerText: "../img/quiz/eye_Fear1.png", isCorrect: false },
+      { answerText: "../img/quiz/eye_Neutral1.png", isCorrect: true },
+      { answerText: "../img/quiz/eye_Disgust1.png", isCorrect: false },
     ],
   },
 ];

@@ -17,7 +17,7 @@ const Carousel1 = () => {
         <Carousel.Item>
           <img
             className="Carousel_WidthHeight"
-            src="../img/carousel/Eyes.jpeg"
+            src="img/carousel/Eyes.jpeg"
             alt="First slide"
           />
         </Carousel.Item>
